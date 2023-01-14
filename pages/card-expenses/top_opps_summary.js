@@ -23,7 +23,7 @@ export default function TopOppsSummary() {
                 <Text fontSize="4xl" color="brand.darkpink"><b>3 OOPS</b></Text>
             </Box>
             <Box>
-            <Card direction={{ base: 'row', sm: 'row' }} my={3}
+            <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
                     overflow='hidden'
                     variant='outline'
                     backgroundColor="#F35057"
@@ -33,7 +33,7 @@ export default function TopOppsSummary() {
                         <Text size='md' fontSize='xl' color="white">Shopee</Text>
                     </CardBody>
                 </Card>
-                <Card direction={{ base: 'row', sm: 'row' }} my={3}
+                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
                     overflow='hidden'
                     variant='outline'
                     backgroundColor="#F35057"
@@ -43,7 +43,7 @@ export default function TopOppsSummary() {
                         <Text size='md' fontSize='xl' color="white">Shopee</Text>
                     </CardBody>
                 </Card>
-                <Card direction={{ base: 'row', sm: 'row' }} my={3}
+                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
                     overflow='hidden'
                     variant='outline'
                     backgroundColor="#F35057"
