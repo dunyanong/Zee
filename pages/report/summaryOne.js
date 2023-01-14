@@ -22,7 +22,7 @@ export default function TopSpendingSummary() {
         padding="5rem 2rem 0 2rem"
         className="bg-[#6BCDE7] m-0 p-0 h-screen"
       >
-        <Box height="80vh">
+        <Box height="85%">
         <Heading as="h1" size="2xl" color="#5452C6">
           Last Week,<br></br> Your Spend
         </Heading>
