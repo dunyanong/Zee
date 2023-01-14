@@ -5,7 +5,7 @@ import { WarningIcon } from '@chakra-ui/icons'
 import MultiProgress from 'react-multi-progress'
 
 
-const summaryNine = () => {
+const summaryFour = () => {
      
     return (
         <>
@@ -113,4 +113,4 @@ const summaryNine = () => {
     )
 }
 
-export default summaryNine;
+export default summaryFour;

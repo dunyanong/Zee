@@ -5,7 +5,7 @@ import NextButton from '../../components/NextButton'
 // import img
 import Oops from '../../public/oops.png'
 
-export default function TopOppsSummary() {
+export default function SummaryTwo() {
     return (
         <>
           <Head>

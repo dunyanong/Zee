@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Box, Text, Heading, Container, Card, CardBody, Stack, Image, CardFooter, CardHeader } from '@chakra-ui/react'
 import NextButton from '../../components/NextButton'
-export default function TopSpendingSummary() {
+export default function SummaryOne() {
   const top3Categories = [
     ["General", 1300.50],
     ["Food", 100.50],
