@@ -7,6 +7,8 @@ import Counter from "../components/Counter";
 import { AnimatePresence } from "framer-motion";
 import CARDS from "../data/cards";
 import RotateIcon from "../icons/RotateIcon";
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Home() {
   const [cards, setCards] = useState(CARDS);
@@ -42,45 +44,36 @@ export default function Home() {
   };
 
   return (
-    <div className="relative flex flex-col justify-center items-center w-full h-screen gradient">
+    <>
       <Head>
-        <title>Next App</title>
+        <title>ZEE BY RHB</title>
+        <meta name="description" content="Card Expenses" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AnimatePresence>
-        {cards.map((card, index) => (
-          <Card
-            key={card.name}
-            active={index === activeIndex}
-            removeCard={removeCard}
-            card={card}
-          />
-        ))}
-      </AnimatePresence>
-      {cards.length === 0 ? (
-        <h1 className="text-3xl font-bold underline">End of Stack</h1>
-      ) : null}
-      <footer className="absolute bottom-4 flex items-center space-x-4">
-        <div className="flex flex-col items-center space-y-2">
-          <button
-            disabled={history.length === 0}
-            className="w-14 h-14 rounded-full text-black bg-white inline-flex justify-center items-center disabled:cursor-not-allowed"
-            onClick={undoSwipe}
-            data-testid="undo-btn"
-            aria-label="Undo Swipe"
+      <Box
+        align-items="center"
+        padding="2rem"
+        className="bg-[#6BCDE7] m-0 p-0 h-screen"
+      >
+        <Heading as="h1" size="4xl" color="brand.darkpink">
+          Your Weekly Expense Report is ready!
+        </Heading>
+        <Text color="#036B9C" fontSize="2xl" padding="2rem 0 10rem 0">
+          9/1/2023 to 15/1/2023
+        </Text>
+        <Link href="/card-expenses">
+          <Button
+            backgroundColor="brand.purple"
+            color="#FFFFFF"
+            width="100%"
+            height="3rem"
           >
-            <RotateIcon strokeWidth={3} />
-          </button>
-          <span className="text-xs text-white">Undo</span>
-        </div>
-        <Counter label="Likes" count={result.like} testid="like-count" />
-        <Counter label="Nopes" count={result.nope} testid="nope-count" />
-        <Counter
-          label="Superlike"
-          count={result.superlike}
-          testid="superlike-count"
-        />
-      </footer>
-    </div>
+            Let's Go
+          </Button>
+        </Link>
+      </Box>
+    </>
   );
 }
