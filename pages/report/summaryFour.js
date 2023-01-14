@@ -3,6 +3,7 @@ import { Box, Text, Heading, Flex, Center } from '@chakra-ui/react'
 import NextButton from '../../components/NextButton'
 import { WarningIcon } from '@chakra-ui/icons'
 import MultiProgress from 'react-multi-progress'
+import Link from "next/link";
 
 
 const summaryFour = () => {
@@ -22,7 +23,7 @@ const summaryFour = () => {
                 padding="5rem 2rem 0 2rem"
                 className="bg-[#6BCDE7] m-0 p-0 h-screen"
             >
-            <Box height="85%">
+            <Box >
                 <Heading as="h1" color="brand.purple">Check out where you are at your goals</Heading>
                 <Box pt={5}>
                     <Text textAlign="right">Total Spending: RM 2480</Text>
@@ -107,7 +108,9 @@ const summaryFour = () => {
                     </Flex>
                 </Center>
             </Box>
-            <NextButton text="Next"/>
+            <Link href="/report/summaryFive">
+                <NextButton text="Next"/>
+            </Link>
             </Box>
         </>
     )

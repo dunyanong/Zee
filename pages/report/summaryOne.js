@@ -1,13 +1,25 @@
-import Head from 'next/head'
-import { Box, Text, Heading, Container, Card, CardBody, Stack, Image, CardFooter, CardHeader } from '@chakra-ui/react'
-import NextButton from '../../components/NextButton'
+import Head from "next/head";
+import {
+  Box,
+  Text,
+  Heading,
+  Container,
+  Card,
+  CardBody,
+  Stack,
+  Image,
+  CardFooter,
+  CardHeader,
+} from "@chakra-ui/react";
+import NextButton from "../../components/NextButton";
+import Link from "next/link";
+
 export default function SummaryOne() {
   const top3Categories = [
-    ["General", 1300.50],
-    ["Food", 100.50],
-    ["Transport", 50.50]
-  ]
-
+    ["General", 1300.5],
+    ["Food", 100.5],
+    ["Transport", 50.5],
+  ];
 
   return (
     <>
@@ -17,87 +29,124 @@ export default function SummaryOne() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box 
-        align-items= "center"
+      <Box
+        align-items="center"
         padding="5rem 2rem 0 2rem"
         className="bg-[#6BCDE7] m-0 p-0 h-screen"
       >
-        <Box height="85%">
-        <Heading as="h1" size="2xl" color="#5452C6">
-          Last Week,<br></br> Your Spend
-        </Heading>
-        <Heading as="h1" color="brand.darkpink" fontSize='5xl' /*textAlign="center"*/ padding="2rem 0 0 0">RM1300.50</Heading>
-        <Box pt="2rem" pb="2rem">
-          <Heading as="h2" size="lg"  color="#5452C6">
-            Top Categories
+        <Box >
+          <Heading as="h1" size="2xl" color="#5452C6">
+            Last Week,<br></br> Your Spend
           </Heading>
-
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
+          <Heading
+            as="h1"
+            color="brand.darkpink"
+            fontSize="5xl"
+            /*textAlign="center"*/ py="1"
           >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>📦</Text>
-            </CardHeader>
-              <Stack>
-              <CardBody>
+            RM1300.50
+          </Heading>
+          <Box>
+            <Heading as="h2" size="lg" color="#5452C6">
+              Top Categories
+            </Heading>
 
-                  <Text  fontSize='xl' color="#036B9C">General</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
-              </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🛍</Text>
-            </CardHeader>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  📦
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-                  <Text  fontSize='xl' color="#036B9C">Shopping</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    General
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🚗</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🛍
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Transport</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Shopping
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🚗
+                </Text>
+              </CardHeader>
+              <Stack>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Transport
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
+              </Stack>
+            </Card>
+          </Box>
         </Box>
-        </Box>
-        <NextButton text="Next"/>
+        <Link href="/report/summaryTwo">
+        <NextButton text="Next" />
+        </Link>
       </Box>
     </>
-  )
+  );
 }
