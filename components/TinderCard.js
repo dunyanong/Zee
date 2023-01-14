@@ -49,6 +49,12 @@ const TinderCard = ({ card, removeCard, active }) => {
           <Emoji label={card.name} emoji={card.emoji} />
           <Title title={card.price} color={card.color} />
           <Title title={card.name} color={card.color} />
+          <div className="my-4 flex items-center justify-center">
+            <p className="font-normal text-[#5452C6] text-lg leading-[22px] text-center">
+              8 Jan 2023 <br />
+              Card ending 4682
+            </p>
+          </div>
         </motion.div>
       ) : (
         <div
