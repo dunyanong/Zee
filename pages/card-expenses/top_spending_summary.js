@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { Box, Text, Heading, Container, Button, Card, CardBody, Stack, Image, CardFooter, CardHeader } from '@chakra-ui/react'
-
+import { Box, Text, Heading, Container, Card, CardBody, Stack, Image, CardFooter, CardHeader } from '@chakra-ui/react'
+import NextButton from '../../components/NextButton'
 export default function TopSpendingSummary() {
   const top3Categories = [
     ["General", 1300.50],
@@ -22,6 +22,7 @@ export default function TopSpendingSummary() {
         padding="5rem 2rem 0 2rem"
         className="bg-[#6BCDE7] m-0 p-0 h-screen"
       >
+        <Box height="80vh">
         <Heading as="h1" size="2xl" color="#5452C6">
           Last Week,<br></br> Your Spend
         </Heading>
@@ -45,9 +46,9 @@ export default function TopSpendingSummary() {
               <Stack>
               <CardBody>
 
-                  <Text size='md' fontSize='xl' color="#036B9C">General</Text>
-                    <Text py='2' fontSize='2xl' color="#036B9C">
-                      <b>RM302.00</b>
+                  <Text  fontSize='xl' color="#036B9C">General</Text>
+                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
+                      RM 302.00
                     </Text>
               </CardBody>
               </Stack>
@@ -65,10 +66,9 @@ export default function TopSpendingSummary() {
             </CardHeader>
               <Stack>
               <CardBody>
-
-                  <Text size='md' fontSize='xl' color="#036B9C">Shopping</Text>
-                    <Text py='2' fontSize='2xl' color="#036B9C">
-                      <b>RM302.00</b>
+                  <Text  fontSize='xl' color="#036B9C">Shopping</Text>
+                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
+                      RM 302.00
                     </Text>
               </CardBody>
               </Stack>
@@ -87,14 +87,16 @@ export default function TopSpendingSummary() {
               <Stack>
               <CardBody>
 
-                  <Text size='md' fontSize='xl' color="#036B9C">Transport</Text>
-                    <Text py='2' fontSize='2xl' color="#036B9C">
-                      <b>RM302.00</b>
+                  <Text  fontSize='xl' color="#036B9C">Transport</Text>
+                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
+                      RM 302.00
                     </Text>
               </CardBody>
               </Stack>
           </Card>
         </Box>
+        </Box>
+        <NextButton text="Next"/>
       </Box>
     </>
   )

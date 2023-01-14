@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Text, Heading, Container, Button, Card, CardBody, CardHeader } from '@chakra-ui/react'
-
+import { Box, Text, Heading, Container, Button, Card, CardBody, Stack, CardHeader,HStack } from '@chakra-ui/react'
+import NextButton from '../../components/NextButton'
+// import img
+import Oops from '../../public/oops.png'
 
 export default function TopOppsSummary() {
     return (
@@ -17,43 +19,52 @@ export default function TopOppsSummary() {
             padding="5rem 2rem 0 2rem"
             className="bg-[#6BCDE7] m-0 p-0 h-screen"
           >
+            <Box height="80vh">
             <Text fontSize="xl" color="brand.darkblue">Hey, we know you need self care...</Text>
-            <Box py={10}>
-                <Text fontSize="2xl" color="brand.darkpink">but you did</Text>
-                <Text fontSize="4xl" color="brand.darkpink"><b>3 OOPS</b></Text>
+                <Box py={10} direction={{ base: 'row', sm: 'row' }}
+                overflow='hidden'
+                variant='outline'>
+                <HStack justifyContent="space-between">
+                    <Stack>
+                        <Text fontSize="2xl" color="brand.darkpink" maxW="150">but you did</Text>
+                        <Text fontSize="4xl" color="brand.darkpink" maxW="150" as="b">3 OOPS</Text>
+                    </Stack>
+                    <Image src={Oops} width="100" height="100"></Image></HStack>
+                </Box>
+                <Box>
+                <Card  my={3} boxShadow='lg' p='2' rounded='md' bg='white' border="none"
+                        overflow='hidden'
+                        variant='outline'
+                        backgroundColor="#F35057"
+                    >
+                        <CardBody fontWeight="bold" textAlign="Center">
+                            <Text size='md' fontSize='2xl' color="white" >RM 83.40</Text>
+                            <Text size='md' fontSize='xl' color="white">Shopee</Text>
+                        </CardBody>
+                    </Card>
+                    <Card  my={3} boxShadow='lg' p='2' rounded='md' bg='white' border="none"
+                        overflow='hidden'
+                        variant='outline'
+                        backgroundColor="#F35057"
+                    >
+                        <CardBody fontWeight="bold" textAlign="Center">
+                            <Text size='md' fontSize='2xl' color="white" >RM 255.00</Text>
+                            <Text size='md' fontSize='xl' color="white">Shopee</Text>
+                        </CardBody>
+                    </Card>
+                    <Card  my={3} boxShadow='lg' p='2' rounded='md' bg='white' border="none"
+                        overflow='hidden'
+                        variant='outline'
+                        backgroundColor="#F35057"
+                    >
+                        <CardBody fontWeight="bold" textAlign="Center">
+                            <Text size='md' fontSize='2xl' color="white" >RM 43.10</Text>
+                            <Text size='md' fontSize='xl' color="white">Lobster & Burger</Text>
+                        </CardBody>
+                    </Card>
+                </Box>
             </Box>
-            <Box>
-            <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
-                    overflow='hidden'
-                    variant='outline'
-                    backgroundColor="#F35057"
-                >
-                    <CardBody fontWeight="bold" textAlign="Center">
-                        <Text size='md' fontSize='2xl' color="white" >RM 83.40</Text>
-                        <Text size='md' fontSize='xl' color="white">Shopee</Text>
-                    </CardBody>
-                </Card>
-                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
-                    overflow='hidden'
-                    variant='outline'
-                    backgroundColor="#F35057"
-                >
-                    <CardBody fontWeight="bold" textAlign="Center">
-                        <Text size='md' fontSize='2xl' color="white" >RM 255.00</Text>
-                        <Text size='md' fontSize='xl' color="white">Shopee</Text>
-                    </CardBody>
-                </Card>
-                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
-                    overflow='hidden'
-                    variant='outline'
-                    backgroundColor="#F35057"
-                >
-                    <CardBody fontWeight="bold" textAlign="Center">
-                        <Text size='md' fontSize='2xl' color="white" >RM 43.10</Text>
-                        <Text size='md' fontSize='xl' color="white">Lobster & Burger </Text>
-                    </CardBody>
-                </Card>
-            </Box>
+            <NextButton text="Next"/>
           </Box>
         </>
       )
