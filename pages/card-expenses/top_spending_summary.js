@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Box, Text, Heading, Container, Button, Card, CardBody, CardHeader } from '@chakra-ui/react'
-
+import { Box, Text, Heading, Container, Button, Card, CardBody, Stack, Image, CardFooter, CardHeader } from '@chakra-ui/react'
 
 export default function TopSpendingSummary() {
   const top3Categories = [
@@ -10,17 +8,6 @@ export default function TopSpendingSummary() {
     ["Transport", 50.50]
   ]
 
-  const categoryCard = top3Categories.map((category, index) => {
-    return <Card my='5'>
-    <CardBody>
-      <Text size='md' fontSize='xl' color="#036B9C">{category[0]}</Text>
-      <Text py='2' fontSize='2xl' color="#036B9C">
-        <b>RM{category[1]}</b>
-      </Text>
-    </CardBody>
-  </Card>
-    
-  })
 
   return (
     <>
@@ -39,13 +26,74 @@ export default function TopSpendingSummary() {
           Last Week,<br></br> Your Spend
         </Heading>
         <Heading as="h1" color="brand.darkpink" fontSize='5xl' /*textAlign="center"*/ padding="2rem 0 0 0">RM1300.50</Heading>
-        <Box>
-          <Heading as="h2" size="lg" pt="2rem" pb="2rem" color="#5452C6">
+        <Box pt="2rem" pb="2rem">
+          <Heading as="h2" size="lg"  color="#5452C6">
             Top Categories
           </Heading>
-          {
-            categoryCard
-          }
+
+          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
+          overflow='hidden'
+          variant='outline'
+          >
+            <CardHeader
+            position='relative'>
+              <Text position="absolute" top= " 50%"
+            left= " 50%"
+            transform= " translate(-50%, -50%)"
+            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>📦</Text>
+            </CardHeader>
+              <Stack>
+              <CardBody>
+
+                  <Text size='md' fontSize='xl' color="#036B9C">General</Text>
+                    <Text py='2' fontSize='2xl' color="#036B9C">
+                      <b>RM302.00</b>
+                    </Text>
+              </CardBody>
+              </Stack>
+          </Card>
+          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
+          overflow='hidden'
+          variant='outline'
+          >
+            <CardHeader
+            position='relative'>
+              <Text position="absolute" top= " 50%"
+            left= " 50%"
+            transform= " translate(-50%, -50%)"
+            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🛍</Text>
+            </CardHeader>
+              <Stack>
+              <CardBody>
+
+                  <Text size='md' fontSize='xl' color="#036B9C">Shopping</Text>
+                    <Text py='2' fontSize='2xl' color="#036B9C">
+                      <b>RM302.00</b>
+                    </Text>
+              </CardBody>
+              </Stack>
+          </Card>
+          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
+          overflow='hidden'
+          variant='outline'
+          >
+            <CardHeader
+            position='relative'>
+              <Text position="absolute" top= " 50%"
+            left= " 50%"
+            transform= " translate(-50%, -50%)"
+            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🚗</Text>
+            </CardHeader>
+              <Stack>
+              <CardBody>
+
+                  <Text size='md' fontSize='xl' color="#036B9C">Transport</Text>
+                    <Text py='2' fontSize='2xl' color="#036B9C">
+                      <b>RM302.00</b>
+                    </Text>
+              </CardBody>
+              </Stack>
+          </Card>
         </Box>
       </Box>
     </>
