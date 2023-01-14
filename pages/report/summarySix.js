@@ -24,99 +24,99 @@ const summarySix = () => {
                     <div className="bg-blue-600 h-2.5 rounded-full"></div>
                     </div> 
                 
-                    <div class="w-full max-w-md p-4 mt-20 bg-white border rounded-lg shadow-md sm:p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <p class="text-xl font-bold leading-none text-gray-900">Total Expenses</p>
-                            <p class="text-sm font-bold text-gray-900 hover:underline">RM 3278</p>
+                    <div className="w-full max-w-md p-4 mt-20 bg-white border rounded-lg shadow-md sm:p-8">
+                        <div className="flex items-center justify-between mb-4">
+                            <p className="text-xl font-bold leading-none text-gray-900">Total Expenses</p>
+                            <p className="text-sm font-bold text-gray-900 hover:underline">RM 3278</p>
                         </div>
                     <div>
-                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-                                <li class="py-3 sm:py-4">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex-shrink-0">
+                            <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+                                <li className="py-3 sm:py-4">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0">
                                         <p className="text-center mx-1">📜</p>
                                         </div>
-                                        <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate  ">
+                                        <div className="flex-1 min-w-0">
+                                            <p className="text-sm font-medium text-gray-900 truncate  ">
                                                 Bills
                                             </p>
-                                            <p class="text-sm text-gray-500 truncate">
+                                            <p className="text-sm text-gray-500 truncate">
                                                 electricity, gas, and internet
                                             </p>
                                         </div>
-                                        <div class="inline-flex items-center text-base font-semibold text-gray-900  ">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900  ">
                                                 RM 351
                                         </div>
                                     </div>
                                 </li>
-                                <li class="py-3 sm:py-4">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex-shrink-0">
+                                <li className="py-3 sm:py-4">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0">
                                             <p className="text-center mx-1">🎥</p>
                                         </div>
-                                        <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate  ">
+                                        <div className="flex-1 min-w-0">
+                                            <p className="text-sm font-medium text-gray-900 truncate  ">
                                                 Entertainment
                                             </p>
-                                            <p class="text-sm text-gray-500 truncate">
+                                            <p className="text-sm text-gray-500 truncate">
                                                 movies, music, and sports
                                             </p>
                                         </div>
-                                        <div class="inline-flex items-center text-base font-semibold text-gray-900  ">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900  ">
                                             RM 1960
                                         </div>
                                     </div>
                                 </li>
-                                <li class="py-3 sm:py-4">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex-shrink-0">
+                                <li className="py-3 sm:py-4">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0">
                                             <p className="text-center mx-1">🍔</p>
                                         </div>
-                                        <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate  ">
+                                        <div className="flex-1 min-w-0">
+                                            <p className="text-sm font-medium text-gray-900 truncate  ">
                                                 Eating out
                                             </p>
-                                            <p class="text-sm text-gray-500 truncate">
+                                            <p className="text-sm text-gray-500 truncate">
                                                 fruits, vegetables, and soda
                                             </p>
                                         </div>
-                                        <div class="inline-flex items-center text-base font-semibold text-gray-900  ">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900  ">
                                             RM 4672
                                         </div>
                                     </div>
                                 </li>
-                                <li class="py-3 sm:py-4">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex-shrink-0">
+                                <li className="py-3 sm:py-4">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0">
                                             <p className="text-center mx-1">🚗</p>
                                         </div>
-                                        <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate  ">
+                                        <div className="flex-1 min-w-0">
+                                            <p className="text-sm font-medium text-gray-900 truncate  ">
                                                 Transport
                                             </p>
-                                            <p class="text-sm text-gray-500 truncate">
+                                            <p className="text-sm text-gray-500 truncate">
                                                 car, train, or plane
                                             </p>
                                         </div>
-                                        <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900 ">
                                             RM 2506
                                         </div>
                                     </div>
                                 </li>
-                                <li class="pt-3 pb-0 sm:pt-4">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex-shrink-0">
+                                <li className="pt-3 pb-0 sm:pt-4">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0">
                                             <p className="text-center mx-1">🛍️</p>
                                         </div>
-                                        <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate  ">
+                                        <div className="flex-1 min-w-0">
+                                            <p className="text-sm font-medium text-gray-900 truncate  ">
                                                 Shopping
                                             </p>
-                                            <p class="text-sm text-gray-500 truncate">
+                                            <p className="text-sm text-gray-500 truncate">
                                                 store, market, or online
                                             </p>
                                         </div>
-                                        <div class="inline-flex items-center text-base font-semibold text-gray-900  ">
+                                        <div className="inline-flex items-center text-base font-semibold text-gray-900  ">
                                             RM 2367
                                         </div>
                                     </div>
@@ -124,12 +124,6 @@ const summarySix = () => {
                             </ul>
                     </div>
                     </div>
-
-
-
-
-
-
                 </div> 
                 </div>                      
         </div>
