@@ -1,48 +1,17 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
+// import TinderCard from "../components/TinderCard";
 import Card from "../components/Card";
-import Counter from "../components/Counter";
-import { AnimatePresence } from "framer-motion";
+// import Counter from "../components/Counter";
+// import { AnimatePresence } from "framer-motion";
 import CARDS from "../data/cards";
 import RotateIcon from "../icons/RotateIcon";
 import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import Link from "next/link";
+// import RotateIcon from "../icons/RotateIcon";
 
 export default function Home() {
-  const [cards, setCards] = useState(CARDS);
-  const [result, setResult] = useState({
-    like: 0,
-    nope: 0,
-    superlike: 0,
-  });
-  const [history, setHistory] = useState([]);
-  // index of last card
-  const activeIndex = cards.length - 1;
-  const removeCard = (oldCard, swipe) => {
-    setHistory((current) => [...current, { ...oldCard, swipe }]);
-    setCards((current) =>
-      current.filter((card) => {
-        return card.id !== oldCard.id;
-      })
-    );
-    setResult((current) => ({ ...current, [swipe]: current[swipe] + 1 }));
-  };
-  const undoSwipe = () => {
-    const newCard = history.pop();
-    if (newCard) {
-      const { swipe } = newCard;
-      setHistory((current) =>
-        current.filter((card) => {
-          return card.id !== newCard.id;
-        })
-      );
-      setResult((current) => ({ ...current, [swipe]: current[swipe] - 1 }));
-      setCards((current) => [...current, newCard]);
-    }
-  };
-
+  
   return (
     <>
       <Head>
