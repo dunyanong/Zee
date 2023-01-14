@@ -3,8 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Card from "../components/Card";
+import Counter from "../components/Counter";
 import { AnimatePresence } from "framer-motion";
 import CARDS from "../data/cards";
+import RotateIcon from "../icons/RotateIcon";
 
 export default function Home() {
   const [cards, setCards] = useState(CARDS);
@@ -44,7 +46,7 @@ export default function Home() {
       <Head>
         <title>Next App</title>
       </Head>
-      
+
       <AnimatePresence>
         {cards.map((card, index) => (
           <Card
@@ -56,9 +58,9 @@ export default function Home() {
         ))}
       </AnimatePresence>
       {cards.length === 0 ? (
-        <span className="text-white text-xl">End of Stack</span>
+        <h1 className="text-3xl font-bold underline">End of Stack</h1>
       ) : null}
-      {/* <footer className="absolute bottom-4 flex items-center space-x-4">
+      <footer className="absolute bottom-4 flex items-center space-x-4">
         <div className="flex flex-col items-center space-y-2">
           <button
             disabled={history.length === 0}
@@ -78,7 +80,7 @@ export default function Home() {
           count={result.superlike}
           testid="superlike-count"
         />
-      </footer> */}
+      </footer>
     </div>
   );
 }
