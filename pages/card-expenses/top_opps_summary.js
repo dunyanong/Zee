@@ -17,15 +17,42 @@ export default function TopOppsSummary() {
             padding="5rem 2rem 0 2rem"
             className="bg-[#6BCDE7] m-0 p-0 h-screen"
           >
-            <Heading as="h1" size="2xl" color="#5452C6">
-              Last Week,<br></br> Your Spend
-            </Heading>
-            <Heading as="h1" color="brand.darkpink" fontSize='5xl' /*textAlign="center"*/ padding="2rem 0 0 0">RM1300.50</Heading>
+            <Text fontSize="xl" color="brand.darkblue">Hey, we know you need self care...</Text>
+            <Box py={10}>
+                <Text fontSize="2xl" color="brand.darkpink">but you did</Text>
+                <Text fontSize="4xl" color="brand.darkpink"><b>3 OOPS</b></Text>
+            </Box>
             <Box>
-              <Heading as="h2" size="lg" pt="2rem" pb="2rem" color="#5452C6">
-                Top Categories
-              </Heading>
-
+            <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
+                    overflow='hidden'
+                    variant='outline'
+                    backgroundColor="#F35057"
+                >
+                    <CardBody fontWeight="bold" textAlign="Center">
+                        <Text size='md' fontSize='2xl' color="white" >RM 83.40</Text>
+                        <Text size='md' fontSize='xl' color="white">Shopee</Text>
+                    </CardBody>
+                </Card>
+                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
+                    overflow='hidden'
+                    variant='outline'
+                    backgroundColor="#F35057"
+                >
+                    <CardBody fontWeight="bold" textAlign="Center">
+                        <Text size='md' fontSize='2xl' color="white" >RM 255.00</Text>
+                        <Text size='md' fontSize='xl' color="white">Shopee</Text>
+                    </CardBody>
+                </Card>
+                <Card direction={{ base: 'row', sm: 'row' }} my={3} boxShadow='lg' p='6' rounded='md' bg='white' border="none"
+                    overflow='hidden'
+                    variant='outline'
+                    backgroundColor="#F35057"
+                >
+                    <CardBody fontWeight="bold" textAlign="Center">
+                        <Text size='md' fontSize='2xl' color="white" >RM 43.10</Text>
+                        <Text size='md' fontSize='xl' color="white">Lobster & Burger </Text>
+                    </CardBody>
+                </Card>
             </Box>
           </Box>
         </>
