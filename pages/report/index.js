@@ -1,9 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
       <div className="text-center py-10">
             <h2 className="text-5xl py-2 text-gray-800 font-medium md:text-6xl">Total Expenses This Week</h2>
             <h3 className="text-2xl py-2 md:text-3xl text-gray-800">

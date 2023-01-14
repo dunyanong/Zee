@@ -1,9 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const summaryThree = () => {
     return (
@@ -14,13 +10,22 @@ const summaryThree = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className={styles.main}>
+        <main>
         <div className="text-center py-10">
-              <h2 className="text-5xl py-2 text-gray-800 font-medium md:text-6xl">But still below budget</h2>
-              <h3 className="text-2xl py-2 md:text-3xl text-gray-800">
-                Process bar
-              </h3>            
-            </div>
+              <h2 className="text-5xl py-2 text-gray-800 font-medium md:text-6xl">But still below budget</h2> 
+              <div className="flex justify-center">
+                <div className='pt-20'>
+                  <div className="flex justify-between mb-1 w-96">
+                  <span className="text-base font-medium text-gray-800 items-center">RM0</span>
+                  <span className="text-base font-medium text-gray-800 items-center">RM1500</span>
+                  <span className="text-base font-medium text-gray-800 items-center">RM3000</span>
+                  </div>
+                  <div className="w-4/5 bg-gray-200 rounded-full h-2.5">
+                    <div className="bg-blue-600 h-2.5 rounded-full"></div>
+                  </div> 
+                </div> 
+              </div>                      
+        </div>
         </main>
         </div>
     )
