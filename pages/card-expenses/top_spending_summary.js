@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Box, Text, Heading, Container, Button, Card, CardBody, CardHeader } from '@chakra-ui/react'
 
 
-export default function Home() {
+export default function TopSpendingSummary() {
   const top3Categories = [
     ["General", 1300.50],
     ["Food", 100.50],
@@ -32,7 +32,8 @@ export default function Home() {
       </Head>
       <Box 
         align-items= "center"
-        mt='2' padding="5rem 2rem 0 2rem"
+        padding="5rem 2rem 0 2rem"
+        className="bg-[#6BCDE7] m-0 p-0 h-screen"
       >
         <Heading as="h1" size="2xl" color="#5452C6">
           Last Week,<br></br> Your Spend
@@ -43,7 +44,7 @@ export default function Home() {
             Top Categories
           </Heading>
           {
-          categoryCard
+            categoryCard
           }
         </Box>
       </Box>
