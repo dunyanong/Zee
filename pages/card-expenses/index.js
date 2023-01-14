@@ -6,7 +6,7 @@ import CARDS from "../../data/cards";
 import { AnimatePresence } from "framer-motion";
 import TinderCard from "../../components/TinderCard";
 import TotalSpend from "../../components/TotalSpend";
-import { Box } from "@chakra-ui/react";
+import ModalUsage from "../../components/Modal";
 
 function CardExpenses() {
   const [expense, setExpense] = useState(EXPENSE);
@@ -69,9 +69,7 @@ function CardExpenses() {
         </AnimatePresence>
       </div>
 
-      {cards.length === 0 ? (
-        <h1 className="text-3xl font-bold underline">End of Stack</h1>
-      ) : null}
+      {cards.length === 0 ? <div>End of Stack</div> : null}
 
       <div className="grid grid-cols-3 gap-4 p-2">
         {expense.map((i, index) => (
