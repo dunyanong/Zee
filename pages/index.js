@@ -11,7 +11,6 @@ import Link from "next/link";
 // import RotateIcon from "../icons/RotateIcon";
 
 export default function Home() {
-  
   return (
     <>
       <Head>

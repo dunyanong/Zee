@@ -19,8 +19,8 @@ const TinderCard = ({ card, removeCard, active }) => {
       removeCard(card, "nope");
     }
   };
-  
-  const classNames = `absolute h-[430px] w-[300px] bg-white shadow-xl rounded-2xl flex flex-col justify-center items-center cursor-grab`;
+
+  const classNames = `absolute h-[420px] w-[300px] bg-white shadow-xl rounded-2xl flex flex-col justify-center items-center cursor-grab`;
 
   return (
     <>
@@ -47,6 +47,7 @@ const TinderCard = ({ card, removeCard, active }) => {
           data-testid="active-card"
         >
           <Emoji label={card.name} emoji={card.emoji} />
+          <Title title={card.price} color={card.color} />
           <Title title={card.name} color={card.color} />
         </motion.div>
       ) : (
@@ -56,6 +57,7 @@ const TinderCard = ({ card, removeCard, active }) => {
           }`}
         >
           <Emoji label={card.name} emoji={card.emoji} />
+          <Title title={card.price} color={card.color} />
           <Title title={card.name} color={card.color} />
         </div>
       )}
