@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Box, Text, Heading, Container, Button, Card, CardBody, Stack, CardHeader,HStack } from '@chakra-ui/react'
 import NextButton from '../../components/NextButton'
-// import img
+import Link from "next/link";
+
 import Oops from '../../public/oops.png'
 
 export default function SummaryTwo() {
@@ -19,7 +20,7 @@ export default function SummaryTwo() {
             padding="5rem 2rem 0 2rem"
             className="bg-[#6BCDE7] m-0 p-0 h-screen"
           >
-            <Box height="85%">
+            <Box >
             <Text fontSize="xl" color="brand.darkblue">Hey, we know you need self care...</Text>
                 <Box py={10} direction={{ base: 'row', sm: 'row' }}
                 overflow='hidden'
@@ -64,7 +65,9 @@ export default function SummaryTwo() {
                     </Card>
                 </Box>
             </Box>
+            <Link href="/report/summaryThree">
             <NextButton text="Next"/>
+            </Link>
           </Box>
         </>
       )

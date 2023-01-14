@@ -2,8 +2,10 @@ import React from "react";
 import Head from "next/head";
 import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
+import NextButton from "../../components/NextButton";
 
-function MonthlyBudget() {
+function SummaryThree() {
   return (
     <div>
       {" "}
@@ -50,10 +52,12 @@ function MonthlyBudget() {
             width={500}
           />
         </div>
+      <Link href="/report/summaryFour">
+        <NextButton text="next"/>
+      </Link>
       </Box>
-
     </div>
   );
 }
 
-export default MonthlyBudget;
+export default SummaryThree;

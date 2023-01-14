@@ -11,10 +11,12 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import Carousel from "framer-motion-carousel";
+import Link from "next/link";
+import NextButton from "../../components/NextButton";
 
 const colors = ["#f90", "#ef0", "#e0f"];
 
-function SummaryTen() {
+function SummaryFive() {
   const [number, setNumber] = useState();
   return (
     <div>
@@ -54,7 +56,11 @@ function SummaryTen() {
         </div>
       </Box>
     </div>
+        //   <Link href="/report/summarySix">
+        //   <NextButton text="next" />
+        // </Link>
+  
   );
 }
 
-export default SummaryTen;
+export default SummaryFive;

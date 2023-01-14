@@ -17,6 +17,7 @@ import {
 import NextButton from "../../components/NextButton";
 // import img
 import Oops from "../../public/oops.png";
+import Link from "next/link";
 
 export default function SummaryTwo() {
   return (
@@ -32,7 +33,7 @@ export default function SummaryTwo() {
         padding="5rem 2rem 0 2rem"
         className="bg-[#6BCDE7] m-0 p-0 h-screen"
       >
-        <Box height="85%">
+        <Box >
           <Heading as="h1" color="brand.purple">
             Your Week’s Expenses -Summarized
           </Heading>
@@ -46,139 +47,194 @@ export default function SummaryTwo() {
           </Box>
           <Box>
             <Flex justifyContent="space-between" py={5}>
-                <Text fontSize="xl" as="b">Outgoing Total: </Text>
-                <Text fontSize="xl">RM 1300.50</Text>
+              <Text fontSize="xl" as="b">
+                Outgoing Total:{" "}
+              </Text>
+              <Text fontSize="xl">RM 1300.50</Text>
             </Flex>
-            <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>📦</Text>
-            </CardHeader>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  📦
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">General</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    General
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🍔</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🍔
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Eat Out</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Eat Out
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🚗</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🚗
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Transport</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Transport
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🛍</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🛍
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Shopping</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Shopping
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🫣</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🫣
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Entertainment</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Entertainment
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-          <Card direction={{ base: 'row', sm: 'row' }} pl="5" my={3}
-          overflow='hidden'
-          variant='outline'
-          >
-            <CardHeader
-            position='relative'>
-              <Text position="absolute" top= " 50%"
-            left= " 50%"
-            transform= " translate(-50%, -50%)"
-            fontSize='4xl' maxW={{ base: '100%', sm: '100px' }}>🫣</Text>
-            </CardHeader>
+            </Card>
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🫣
+                </Text>
+              </CardHeader>
               <Stack>
-              <CardBody>
-
-                  <Text  fontSize='xl' color="#036B9C">Oops</Text>
-                    <Text py='2' fontSize='2xl' as="b" color="#036B9C">
-                      RM 302.00
-                    </Text>
-              </CardBody>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Oops
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
               </Stack>
-          </Card>
-
+            </Card>
           </Box>
         </Box>
-        <NextButton text="Next" />
+        <NextButton text="Share" />
       </Box>
     </>
   );
