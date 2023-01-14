@@ -31,9 +31,9 @@ export default function SummaryTwo() {
       <Box
         align-items="center"
         padding="5rem 2rem 0 2rem"
-        className="bg-[#6BCDE7] m-0 p-0 h-screen"
+        className="bg-[#6BCDE7] m-0 p-0 h-full"
       >
-        <Box >
+        <Box>
           <Heading as="h1" color="brand.purple">
             Your Week’s Expenses -Summarized
           </Heading>
@@ -232,9 +232,12 @@ export default function SummaryTwo() {
                 </CardBody>
               </Stack>
             </Card>
+
+            <div className="mb-2">
+              <NextButton text="Share" />
+            </div>
           </Box>
         </Box>
-        <NextButton text="Share" />
       </Box>
     </>
   );

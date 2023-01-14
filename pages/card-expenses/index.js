@@ -6,7 +6,19 @@ import CARDS from "../../data/cards";
 import { AnimatePresence } from "framer-motion";
 import TinderCard from "../../components/TinderCard";
 import TotalSpend from "../../components/TotalSpend";
-import ModalUsage from "../../components/Modal";
+// import ModalUsage from "../../components/Modal";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+} from "@chakra-ui/react";
+import Link from "next/link";
 
 function CardExpenses() {
   const [expense, setExpense] = useState(EXPENSE);
@@ -44,6 +56,8 @@ function CardExpenses() {
     }
   };
 
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <div className="my-4 flex items-center justify-center">
@@ -69,7 +83,49 @@ function CardExpenses() {
         </AnimatePresence>
       </div>
 
-      {cards.length === 0 ? <div>End of Stack</div> : null}
+      {cards.length === 0 ? (
+        <div>
+          <div className="my-4 flex items-center justify-center">
+            <Button onClick={onOpen}>Open Expenses</Button>
+          </div>
+
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader></ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <div className="my-4 flex items-center justify-center">
+                  <h1 className="font-bold text-[#5452C6] text-5xl leading-[58px] text-center">
+                    Nice laa
+                  </h1>
+                </div>
+
+                <div className="my-4 flex items-center justify-center">
+                  <span className="text-8xl">🎇</span>
+                </div>
+
+                <div className="my-4 flex items-center justify-center">
+                  <h1 className="font-normal text-[#5452C6] text-lg leading-[22px] text-center">
+                    You finished categorizing your expenses. Let’s see how you
+                    did{" "}
+                  </h1>
+                </div>
+              </ModalBody>
+
+              <ModalFooter>
+                {/* <Button variant="ghost">I’m afraid but sure</Button> */}
+                <button
+                  type="button"
+                  class="text-white bg-[#6001FF] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-[20px] text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <Link href="/report/summaryOne">I’m afraid but sure</Link>
+                </button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+        </div>
+      ) : null}
 
       <div className="grid grid-cols-3 gap-4 p-2">
         {expense.map((i, index) => (

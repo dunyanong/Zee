@@ -13,6 +13,13 @@ import { useState } from "react";
 import Carousel from "framer-motion-carousel";
 import Link from "next/link";
 import NextButton from "../../components/NextButton";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 const colors = ["#f90", "#ef0", "#e0f"];
 
@@ -40,26 +47,45 @@ function SummaryFive() {
           Here are some recommendations for you to ✨be better ✨
         </Text>
 
-        <div style={{ width: 300, height: 200 }}>
-          <Carousel>
-            {colors.map((item, i) => (
-              <div
-                key={i}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: colors[i],
-                }}
-              ></div>
-            ))}
-          </Carousel>
-        </div>
+        <SimpleGrid
+          spacing={4}
+          my={6}
+          templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
+        >
+          <Card>
+            <CardHeader>
+              <div className=" flex items-center justify-center">
+                <h1 className="font-bold text-[#5452C6] text-[32px] leading-[58px] text-left">
+                  Get a cashback card{" "}
+                </h1>
+              </div>
+            </CardHeader>
+            <CardBody>
+              <div className="flex items-center justify-center">
+                <h1 className="font-normal text-[#5452C6] text-lg leading-[22px] text-left">
+                  Cash back as you spend? That is free real estate{" "}
+                </h1>
+              </div>
+            </CardBody>
+            <CardFooter>
+              <button
+                type="button"
+                class="text-white bg-[#E044C4] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-[20px] text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Learn More
+              </button>
+            </CardFooter>
+          </Card>
+        </SimpleGrid>
+
+        <Link href="/report/summarySix">
+          <NextButton text="Next" />
+        </Link>
       </Box>
     </div>
-        //   <Link href="/report/summarySix">
-        //   <NextButton text="next" />
-        // </Link>
-  
+    //   <Link href="/report/summarySix">
+    //   <NextButton text="next" />
+    // </Link>
   );
 }
 
