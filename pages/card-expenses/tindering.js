@@ -121,9 +121,11 @@ function CardExpenses() {
       ) : null}
 
       <div className="grid grid-cols-3 gap-4 p-2">
-        {expense.map((i, index) => (
-          <Card key={i.name} card={i} />
-        ))}
+        {
+          expense.map((i, index) => (
+            <Card key={i.name} card={i}/>
+          ))
+        }
       </div>
 
       <div className="my-4 flex items-center justify-center">

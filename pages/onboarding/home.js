@@ -44,7 +44,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="bg-gray-200 rounded-full h-2.5">
-                  <div className="w-3/4 bg-blue-600 h-2.5 rounded-full"></div>
+                  <div className="w-2/4 bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
               <div className="pt-5">
@@ -61,7 +61,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="bg-gray-200 rounded-full h-2.5">
-                  <div className="w-2/4 bg-blue-600 h-2.5 rounded-full"></div>
+                  <div className="w-1/3 bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
               <div className="pt-5">

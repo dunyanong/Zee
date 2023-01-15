@@ -86,9 +86,6 @@ function SummaryFive() {
         </Link>
       </Box>
     </div>
-    //   <Link href="/report/summarySix">
-    //   <NextButton text="next" />
-    // </Link>
   );
 }
 

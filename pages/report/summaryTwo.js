@@ -67,7 +67,27 @@ export default function SummaryTwo() {
             >
               <CardBody fontWeight="bold" textAlign="Center">
                 <Text size="md" fontSize="2xl" color="white">
-                  RM 83.40
+                  RM 130.00
+                </Text>
+                <Text size="md" fontSize="xl" color="white">
+                  Sephora
+                </Text>
+              </CardBody>
+            </Card>
+            <Card
+              my={3}
+              boxShadow="lg"
+              p="2"
+              rounded="md"
+              bg="white"
+              border="none"
+              overflow="hidden"
+              variant="outline"
+              backgroundColor="#F35057"
+            >
+              <CardBody fontWeight="bold" textAlign="Center">
+                <Text size="md" fontSize="2xl" color="white">
+                  RM 150.00
                 </Text>
                 <Text size="md" fontSize="xl" color="white">
                   Shopee
@@ -87,30 +107,10 @@ export default function SummaryTwo() {
             >
               <CardBody fontWeight="bold" textAlign="Center">
                 <Text size="md" fontSize="2xl" color="white">
-                  RM 255.00
+                  RM 200.00
                 </Text>
                 <Text size="md" fontSize="xl" color="white">
-                  Shopee
-                </Text>
-              </CardBody>
-            </Card>
-            <Card
-              my={3}
-              boxShadow="lg"
-              p="2"
-              rounded="md"
-              bg="white"
-              border="none"
-              overflow="hidden"
-              variant="outline"
-              backgroundColor="#F35057"
-            >
-              <CardBody fontWeight="bold" textAlign="Center">
-                <Text size="md" fontSize="2xl" color="white">
-                  RM 43.10
-                </Text>
-                <Text size="md" fontSize="xl" color="white">
-                  Lobster & Burger
+                  Lobster
                 </Text>
               </CardBody>
             </Card>
