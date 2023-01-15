@@ -79,7 +79,7 @@ export default function SummaryTwo() {
                     Ooops
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 424.50
                   </Text>
                 </CardBody>
               </Stack>
@@ -111,7 +111,7 @@ export default function SummaryTwo() {
                     General
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 250.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -142,7 +142,7 @@ export default function SummaryTwo() {
                     Eat Out
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 0.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -172,7 +172,7 @@ export default function SummaryTwo() {
                     Transport
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 50.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -202,7 +202,7 @@ export default function SummaryTwo() {
                     Shopping
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 200.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -232,7 +232,7 @@ export default function SummaryTwo() {
                     Entertainment
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 55.50
                   </Text>
                 </CardBody>
               </Stack>
