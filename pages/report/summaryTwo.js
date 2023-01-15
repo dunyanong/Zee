@@ -107,7 +107,7 @@ export default function SummaryTwo() {
             >
               <CardBody fontWeight="bold" textAlign="Center">
                 <Text size="md" fontSize="2xl" color="white">
-                  RM 200.00
+                  RM 144.50
                 </Text>
                 <Text size="md" fontSize="xl" color="white">
                   Lobster
