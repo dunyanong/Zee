@@ -24,7 +24,7 @@ export default function Main() {
         <Text color="#036B9C" fontSize="2xl" padding="2rem 0 10rem 0">
           9/1/2023 to 15/1/2023
         </Text>
-        <Link href="/card-expenses">
+        <Link href="/card-expenses/tindering">
           <Button
             backgroundColor="brand.purple"
             color="#FFFFFF"
