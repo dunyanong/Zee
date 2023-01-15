@@ -44,7 +44,7 @@ function SummaryThree() {
         <Text fontSize="xl" color="brand.darkblue">
           But it is okay! You are still within your budget
         </Text>
-        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mt-4">
           <Image
             src={"https://media.giphy.com/media/SEWEmCymjv8XDbsb8I/giphy.gif"}
             alt="the gif"
