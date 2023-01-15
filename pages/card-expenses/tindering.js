@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import TinderCard from "../../components/TinderCard";
 import TotalSpend from "../../components/TotalSpend";
 // import ModalUsage from "../../components/Modal";
+
 import {
   Modal,
   ModalOverlay,
@@ -140,9 +141,83 @@ function CardExpenses() {
       ) : null}
 
       <div className="grid grid-cols-3 gap-4 p-2" onClick={clickToRemove}>
-        {expense.map((i, index) => (
-          <Card key={i.name} card={i} />
-        ))}
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Needs" emoji="📦" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Needs
+            </p>
+          </div>
+        </div>
+
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Eat Out" emoji="🍔" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Eat Out
+            </p>
+          </div>
+        </div>
+
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Transport" emoji="🚗" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Transport
+            </p>
+          </div>
+        </div>
+
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Shopping" emoji="🛍️" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Shopping
+            </p>
+          </div>
+        </div>
+
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#F36D73] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Oooops" emoji="🫣" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Oooops
+            </p>
+          </div>
+        </div>
+
+        <div
+          href="#"
+          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+        >
+          <div className="flex flex-col text-center">
+            <Emoji label="Entertainment" emoji="🛝" />
+            <span className="my-2" />
+            <p className="font-normal text-sm leading-3 text-[#036B9C]">
+              Entertainment
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="my-4 flex items-center justify-center">
@@ -151,5 +226,13 @@ function CardExpenses() {
     </>
   );
 }
+
+const Emoji = ({ emoji, label }) => {
+  return (
+    <span role="img" aria-label={label} className="text-3xl">
+      {emoji}
+    </span>
+  );
+};
 
 export default CardExpenses;
