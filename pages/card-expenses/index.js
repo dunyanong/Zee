@@ -15,7 +15,7 @@ function CardExpense() {
       </Head>
 
       <Box align-items="center" className="bg-[#6BCDE7] m-0 p-0 h-screen">
-        <Link href="/card-expenses/tindering">
+        <Link href="/card-expenses/main">
           <CardExpensePage />
         </Link>
       </Box>
