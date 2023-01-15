@@ -21,16 +21,16 @@ const ActionGoalControl = () => {
           </a>
         </Link>
         <div className="py-5">
-          <h2 className="text-purple-700 text-l md:text-xl max-w-xl mx-auto font-bold">
+          <h2 className="text-purple-700 text-2xl max-w-xl mx-auto font-bold">
             Last step - Take control of your expenses
           </h2>
-          <p className="text-purple-700 text-sm md:text-l max-w-xl mx-auto mt-3">
+          <p className="text-purple-700 text-md max-w-xl mx-auto mt-3">
             Zee can help categorize the following expenses but if you want to
             have full control, all power to you
           </p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-12">
           <div>
             {/*1st display*/}
             <div
@@ -38,8 +38,8 @@ const ActionGoalControl = () => {
               className="flex justify-between items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-100 rounded-lg shadow"
               role="alert"
             >
-              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-purple-200 rounded-lg">
-                <p className="text-l">🚗</p>
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-lg">
+                <p className="text-4xl">🚗</p>
               </div>
               <div className="ml-3 text-sm font-normal px-3">Transport</div>
               {/*Toggle*/}
@@ -56,8 +56,8 @@ const ActionGoalControl = () => {
               className="flex justify-between items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-100 rounded-lg shadow"
               role="alert"
             >
-              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-purple-200 rounded-lg">
-                <p className="text-l">🍔</p>
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-lg">
+                <p className="text-4xl">🍔</p>
               </div>
               <div className="ml-3 text-sm font-normal px-3">
                 Foods & beverages
@@ -76,8 +76,8 @@ const ActionGoalControl = () => {
               className="flex justify-between items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-100 rounded-lg shadow"
               role="alert"
             >
-              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-purple-200 rounded-lg">
-                <p className="text-l">🛍️</p>
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-lg">
+                <p className="text-4xl">🛍️</p>
               </div>
               <div className="ml-3 text-sm font-normal px-3">Shopping</div>
               {/*Toggle*/}
@@ -94,8 +94,8 @@ const ActionGoalControl = () => {
               className="flex justify-between items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-gray-100 rounded-lg shadow"
               role="alert"
             >
-              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-purple-200 rounded-lg">
-                <p className="text-l">🎥</p>
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-lg">
+                <p className="text-4xl">🎥</p>
               </div>
               <div className="ml-3 text-sm font-normal px-3">Entertainment</div>
               {/*Toggle*/}
@@ -108,7 +108,7 @@ const ActionGoalControl = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-12">
           <p className="text-gray-500">Let me do it myself!</p>
         </div>
 

@@ -31,26 +31,26 @@ const ActionGoalMetric = () => {
             <AiOutlineArrowLeft />
           </a>
         </Link>
-        <div className="py-5">
-          <h2 className="text-purple-700 text-l md:text-xl max-w-xl mx-auto font-bold">
+        <div className="my-12">
+          <h2 className="text-purple-700 text-2xl max-w-xl mx-auto font-bold">
             Next - Find a budget that works for you
           </h2>
-          <p className="text-purple-700 text-sm md:text-l max-w-xl mx-auto mt-3">
+          <p className="text-purple-700 text-md max-w-xl mx-auto mt-3">
             Set up yourself for success
           </p>
         </div>
 
         <div className="mt-12">
-          <div className="relative w-64 mx-auto">
+          <div className="relative w-full mx-auto">
             <div className="relative flex items-center">
               <div className="text-xs text-purple-700 font-bold">
-                Chill Mode
+                Chill <br></br>Mode
               </div>
               <div className="absolute inset-y-0 right-0 text-xs text-red-500 font-bold">
-                Try Hard Mode
+                Try <br></br>Hard Mode
               </div>
             </div>
-            <Slider defaultValue={60} min={0} max={300} step={30}>
+            <Slider defaultValue={50} min={0} max={100} step={25}>
               <SliderTrack bg="purple.100">
                 <Box position="relative" right={10} />
                 <SliderFilledTrack bg="purple.600" />
@@ -62,8 +62,8 @@ const ActionGoalMetric = () => {
         <div className="flex justify-center mt-5">
           <Image src={piechart} alt="image" />
         </div>
-        <div className="flex justify-center mt-5">
-          <p className="text-gray-500">Activate Advance Mode 🚀</p>
+        <div className="flex justify-center my-5">
+          <p className="text-gray-500 hover:text-gray-600">Activate Advance Mode 🚀</p>
         </div>
         <Link href="/onboarding/ActionGoalControl">
           <NextButton text="Next Step" />
