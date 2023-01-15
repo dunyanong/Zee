@@ -43,6 +43,14 @@ function CardExpenses() {
     setResult((current) => ({ ...current, [swipe]: current[swipe] + 1 }));
   };
 
+  const clickToRemove = () => {
+    setCards((current) =>
+      current.filter((card) => {
+        return card.id !== cards.length - 1;
+      })
+    );
+  }
+
   const undoSwipe = () => {
     const newCard = history.pop();
     if (newCard) {
@@ -131,7 +139,7 @@ function CardExpenses() {
         </div>
       ) : null}
 
-      <div className="grid grid-cols-3 gap-4 p-2">
+      <div className="grid grid-cols-3 gap-4 p-2" onClick={clickToRemove}>
         {expense.map((i, index) => (
           <Card key={i.name} card={i} />
         ))}
