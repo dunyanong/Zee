@@ -92,12 +92,8 @@ function CardExpenses() {
       </div>
 
       {cards.length === 0 ? (
-        <div>
-          <div className="my-4 flex items-center justify-center">
-            <Button onClick={onOpen}>Open Expenses</Button>
-          </div>
-
-          <Modal isOpen={isOpen} onClose={onClose}>
+        <div className="my-4 flex items-center justify-center">
+          <Modal isOpen={true} onClose={onClose}>
             <ModalOverlay />
             <ModalContent>
               <ModalHeader></ModalHeader>
