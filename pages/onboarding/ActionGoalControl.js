@@ -112,7 +112,7 @@ const ActionGoalControl = () => {
           <p className="text-gray-500">Let me do it myself!</p>
         </div>
 
-        <Link href="/onboarding/ActionGoalIncome">
+        <Link href="/card-expenses">
           <NextButton text="Next Step" />
         </Link>
       </main>

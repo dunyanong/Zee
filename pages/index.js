@@ -10,6 +10,7 @@ import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
 // import RotateIcon from "../icons/RotateIcon";
+import RHBHomepage from "../public/rhbhomepage.svg";
 
 export default function Home() {
   return (
@@ -21,30 +22,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box
-        align-items="center"
-        padding="2rem"
-        className="bg-[#6BCDE7] m-0 p-0 h-screen"
-      >
-        <div className="flex justify-center mt-5">
-          <Image src="/zee.png" height={37} width={99} alt="image" />
-        </div>
-
-        <Heading as="h1" size="4xl" color="brand.darkpink">
-          Your Weekly Expense Report is ready!
-        </Heading>
-        <Text color="#036B9C" fontSize="2xl" padding="2rem 0 10rem 0">
-          For Week 7 Jan 2023 - 15 Jan 2023
-        </Text>
-        <Link href="/card-expenses">
-          <Button
-            backgroundColor="brand.purple"
-            color="#FFFFFF"
-            width="100%"
-            height="3rem"
-          >
-            Let's Go
-          </Button>
+      <Box align-items="center" className="bg-[#6BCDE7] m-0 p-0 h-screen">
+        <Link href="/onboarding">
+          <RHBHomepage />
         </Link>
       </Box>
     </>
