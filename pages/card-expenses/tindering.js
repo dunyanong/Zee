@@ -77,7 +77,7 @@ function CardExpenses() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="my-4 flex items-center justify-center">
+      {/* <div className="my-4 flex items-center justify-center">
         <TotalSpend />
       </div>
 
@@ -85,7 +85,7 @@ function CardExpenses() {
         <h1 className="font-bold text-[32px] leading-9 text-center">
           RM 120.50
         </h1>
-      </div>
+      </div> */}
 
       <div className="relative flex flex-col justify-center items-center w-full h-[130vw] gradient">
         <AnimatePresence>
