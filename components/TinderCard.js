@@ -85,7 +85,7 @@ const Emoji = ({ emoji, label }) => {
 
 const Title = ({ title, color }) => {
   return (
-    <span style={{ color }} className="text-5xl font-bold">
+    <span style={{ color }} className="text-5xl font-bold text-center">
       {title}
     </span>
   );
