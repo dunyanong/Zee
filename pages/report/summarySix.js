@@ -52,6 +52,39 @@ export default function SummaryTwo() {
               </Text>
               <Text fontSize="xl">RM 1300.50</Text>
             </Flex>
+
+            <Card
+              direction={{ base: "row", sm: "row" }}
+              pl="5"
+              my={3}
+              overflow="hidden"
+              variant="outline"
+              backgroundColor="#F36D73"
+            >
+              <CardHeader position="relative">
+                <Text
+                  position="absolute"
+                  top=" 50%"
+                  left=" 50%"
+                  transform=" translate(-50%, -50%)"
+                  fontSize="4xl"
+                  maxW={{ base: "100%", sm: "100px" }}
+                >
+                  🫣
+                </Text>
+              </CardHeader>
+              <Stack>
+                <CardBody>
+                  <Text fontSize="xl" color="#036B9C">
+                    Ooops
+                  </Text>
+                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
+                    RM 302.00
+                  </Text>
+                </CardBody>
+              </Stack>
+            </Card>
+
             <Card
               direction={{ base: "row", sm: "row" }}
               pl="5"
@@ -71,6 +104,7 @@ export default function SummaryTwo() {
                   📦
                 </Text>
               </CardHeader>
+
               <Stack>
                 <CardBody>
                   <Text fontSize="xl" color="#036B9C">
@@ -82,6 +116,7 @@ export default function SummaryTwo() {
                 </CardBody>
               </Stack>
             </Card>
+
             <Card
               direction={{ base: "row", sm: "row" }}
               pl="5"
@@ -188,43 +223,13 @@ export default function SummaryTwo() {
                   fontSize="4xl"
                   maxW={{ base: "100%", sm: "100px" }}
                 >
-                  🫣
+                  🛝
                 </Text>
               </CardHeader>
               <Stack>
                 <CardBody>
                   <Text fontSize="xl" color="#036B9C">
                     Entertainment
-                  </Text>
-                  <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
-                  </Text>
-                </CardBody>
-              </Stack>
-            </Card>
-            <Card
-              direction={{ base: "row", sm: "row" }}
-              pl="5"
-              my={3}
-              overflow="hidden"
-              variant="outline"
-            >
-              <CardHeader position="relative">
-                <Text
-                  position="absolute"
-                  top=" 50%"
-                  left=" 50%"
-                  transform=" translate(-50%, -50%)"
-                  fontSize="4xl"
-                  maxW={{ base: "100%", sm: "100px" }}
-                >
-                  🫣
-                </Text>
-              </CardHeader>
-              <Stack>
-                <CardBody>
-                  <Text fontSize="xl" color="#036B9C">
-                    Oops
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
                     RM 302.00
