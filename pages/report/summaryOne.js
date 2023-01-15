@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import NextButton from "../../components/NextButton";
 import Link from "next/link";
-
+import saving from "./saving.png";
 export default function SummaryOne() {
   const top3Categories = [
     ["General", 1300.5],
@@ -44,7 +44,7 @@ export default function SummaryOne() {
             fontSize="5xl"
             /*textAlign="center"*/ py="1"
           >
-            RM1300.50
+            RM2480
           </Heading>
           <Box>
             <Heading as="h2" size="lg" color="#5452C6">
@@ -73,10 +73,10 @@ export default function SummaryOne() {
               <Stack>
                 <CardBody>
                   <Text fontSize="xl" color="#036B9C">
-                    General
+                    Necessities
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 300.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -103,10 +103,10 @@ export default function SummaryOne() {
               <Stack>
                 <CardBody>
                   <Text fontSize="xl" color="#036B9C">
-                    Shopping
+                    Wants
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 480.00
                   </Text>
                 </CardBody>
               </Stack>
@@ -127,16 +127,16 @@ export default function SummaryOne() {
                   fontSize="4xl"
                   maxW={{ base: "100%", sm: "100px" }}
                 >
-                  🚗
-                </Text>
+                  💰
+                </Text> 
               </CardHeader>
               <Stack>
                 <CardBody>
                   <Text fontSize="xl" color="#036B9C">
-                    Transport
+                    Saving
                   </Text>
                   <Text py="2" fontSize="2xl" as="b" color="#036B9C">
-                    RM 302.00
+                    RM 200.00
                   </Text>
                 </CardBody>
               </Stack>
