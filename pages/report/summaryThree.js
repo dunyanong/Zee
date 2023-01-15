@@ -53,7 +53,7 @@ function SummaryThree() {
           />
         </div>
         <Link href="/report/summaryFour">
-          <NextButton text="next" />
+          <NextButton text="Next" />
         </Link>
       </Box>
     </div>
