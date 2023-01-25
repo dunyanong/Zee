@@ -30,7 +30,7 @@ export default function SummaryTwo() {
       </Head>
       <Box
         align-items="center"
-        padding="5rem 2rem 0 2rem"
+        padding="5rem 2rem 10rem 2rem"
         className="bg-[#6BCDE7] m-0 p-0 h-full"
       >
         <Box>

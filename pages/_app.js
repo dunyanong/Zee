@@ -12,7 +12,7 @@ const colors = {
   style: {
     global: {
       'html, body': {
-        backgroundColor: '#6BCDE7',
+        backgroundColor: 'bg-cyan-400',
       }
     }
   }

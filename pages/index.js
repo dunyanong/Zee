@@ -24,9 +24,10 @@ export default function Home() {
 
       <Box align-items="center" className="bg-[#6BCDE7] m-0 p-0 h-screen">
         <Link href="/onboarding">
-          <RHBHomepage />
+            <RHBHomepage className="w-full" />
         </Link>
-      </Box>
+    </Box>
+
     </>
   );
 }

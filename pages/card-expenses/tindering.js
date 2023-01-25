@@ -87,7 +87,7 @@ function CardExpenses() {
         </h1>
       </div> */}
 
-      <div className="relative flex flex-col justify-center items-center w-full h-[130vw] gradient">
+      <div className="flex flex-col justify-center items-center w-full h-[130vw] gradient">
         <AnimatePresence>
           {cards.map((card, index) => (
             <TinderCard
@@ -106,7 +106,9 @@ function CardExpenses() {
             <ModalOverlay />
             <ModalContent>
               <ModalHeader></ModalHeader>
-              <ModalCloseButton />
+              <Link href="/report/summaryOne">
+                <ModalCloseButton />
+              </Link>              
               <ModalBody>
                 <div className="my-4 flex items-center justify-center">
                   <h1 className="font-bold text-[#5452C6] text-5xl leading-[58px] text-center">
@@ -140,10 +142,11 @@ function CardExpenses() {
         </div>
       ) : null}
 
-      <div className="grid grid-cols-3 gap-4 p-2" onClick={clickToRemove}>
+      <div className="mx-5">
+      <div className="grid grid-cols-3 gap-x-5 gap-y-4">
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Needs" emoji="📦" />
@@ -156,7 +159,7 @@ function CardExpenses() {
 
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Eat Out" emoji="🍔" />
@@ -169,7 +172,7 @@ function CardExpenses() {
 
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Transport" emoji="🚗" />
@@ -182,7 +185,7 @@ function CardExpenses() {
 
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Shopping" emoji="🛍️" />
@@ -195,7 +198,7 @@ function CardExpenses() {
 
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#F36D73] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Oooops" emoji="🫣" />
@@ -208,7 +211,7 @@ function CardExpenses() {
 
         <div
           href="#"
-          className="block w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+          className="w-[120px] p-6 bg-[#E6F7FE] border border-gray-200 rounded-xl shadow-md hover:bg-gray-100" onClick={clickToRemove}
         >
           <div className="flex flex-col text-center">
             <Emoji label="Entertainment" emoji="🛝" />
@@ -218,6 +221,7 @@ function CardExpenses() {
             </p>
           </div>
         </div>
+      </div>
       </div>
 
       <div className="my-4 flex items-center justify-center">

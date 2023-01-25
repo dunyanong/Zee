@@ -8,7 +8,7 @@ const NextButton = ({text}) => {
         color="#FFFFFF"
         width="100%"
         height="3rem"
-        mt={5}
+        my={10}
         borderRadius="1rem"
       >
         {text}

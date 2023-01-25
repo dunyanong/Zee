@@ -22,7 +22,7 @@ const ActionGoalIncome = () => {
         </Link>
         
         <div className='flex flex-col justify-between h-full'>
-        <div className='my-12'>
+        <div className='my-6'>
           <h2 className='text-purple-700 text-2xl max-w-xl mx-auto font-bold'>
             Let us set you up!
           </h2>
@@ -36,15 +36,15 @@ const ActionGoalIncome = () => {
           </h1>
           <div className='text-white font-extrabold bg-purple-800 rounded-lg text-xl px-5 py-4 text-center my-8'>
             <div>
-              <div className='relative mt-1 rounded-md shadow-sm '>
-                <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 bg-purple-800'>
+              <div className='relative mt-1 rounded-md shadow-sm'>
+                <div className='absolute flex items-center pl-3 bg-purple-800'>
                   <p className='text-white text-xl font-bold'>RM</p>
                 </div>
                 <input
                   type='text'
                   name='price'
                   id='price'
-                  className='block w-full rounded-md border-gray-300 pl-12 pr-12 text-xl text-white bg-purple-800'
+                  className='block w-full rounded-md pl-12 pr-12 text-xl text-white bg-purple-800'
                   placeholder='0.00'
                 />
               </div>
@@ -53,13 +53,9 @@ const ActionGoalIncome = () => {
         </div>
         </div>
 
-        
-
-        <div className='pb-12'>
-          <Link href='/onboarding/ActionGoalMetric'>
-            <NextButton text='Next Step' />
-          </Link>
-        </div>
+        <Link href='/onboarding/ActionGoalMetric'>
+          <NextButton text='Next Step' />
+        </Link>
         </div>
       </main>
     </div>
