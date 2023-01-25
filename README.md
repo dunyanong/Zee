@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zee - Expense Management Feature for RHB Mobile Banking App
 
-## Getting Started
+Welcome to Zee, a new expense management prototype feature within the RHB mobile banking app. With its card-swiping mechanism, Zee aims to make expense categorization more efficient for users, allowing them to easily track and manage their expenses.
 
-First, run the development server:
+## Features
+- **Card-Swiping Mechanism**: Easily categorize expenses by simply swiping your card.
+- **Expense Tracking**: Keep track of all your expenses in one place.
+- **Expense Management**: Manage your expenses by setting budgets, creating reports, and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## How to Use
+1. Open the RHB mobile banking app.
+2. Go to the Zee feature within the app.
+3. Swipe your card to categorize expenses.
+4. Track and manage your expenses in the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requirements
+- RHB mobile banking app
+- Mobile device
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Availability
+Zee is currently only available on mobile.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Built with 
+* [NextJS](https://nextjs.org/)
+* [React](https://reactjs.org/)
+* [Tailwind](https://tailwindcss.com/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [ChakraUI](https://chakra-ui.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Developers 
+- [Eugene](https://github.com/EugeneGohh)
+- [Kingsley](https://github.com/haohao1029)
+- [KNazran](https://github.com/knazran)
 
-## Learn More
+## Acknowledgments
+- [RHB Bank](https://www.rhbgroup.com/) for providing the platform for this hackathon project.
+- [JomHack](https://www.jomhack.com/) for hosting the event.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Disclaimer
+This project is a prototype and is not officially endorsed or supported by RHB Bank.
