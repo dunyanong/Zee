@@ -24,7 +24,6 @@ Zee is currently only available on mobile.
 * [NextJS](https://nextjs.org/)
 * [React](https://reactjs.org/)
 * [Tailwind](https://tailwindcss.com/)
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [ChakraUI](https://chakra-ui.com/)
 
