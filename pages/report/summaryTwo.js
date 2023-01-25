@@ -50,7 +50,7 @@ export default function SummaryTwo() {
                   3 OOPS
                 </Text>
               </Stack>
-              <Image src={Oops} width="100" height="100"></Image>
+              <Image src={Oops} width="100" height="100" alt="image"></Image>
             </HStack>
           </Box>
           <Box>

@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/report/summaryFour": [
+    "/report/summaryFive": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/report/summaryFour.js"
-    ],
-    "/report/summarySix": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/report/summarySix.js"
+      "static/chunks/pages/report/summaryFive.js"
     ]
   },
   "ampFirstPages": []

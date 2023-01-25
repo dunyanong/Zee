@@ -25,14 +25,14 @@ export default function Main() {
           9/1/2023 to 15/1/2023
         </Text>
         <Link href="/card-expenses/tindering">
-          <Button
+        <Button
             backgroundColor="brand.purple"
             color="#FFFFFF"
             width="100%"
             height="3rem"
           >
-            Let's Go
-          </Button>
+            Let&apos;s Go
+        </Button>
         </Link>
       </Box>
     </>

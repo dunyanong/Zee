@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import NextButton from "../../components/NextButton";
